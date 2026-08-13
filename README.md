@@ -1,2 +1,10 @@
-# web-development-labs
-Prácticas de laboratorio del curso Ingeniería de Software III — Universidad del Cauca. Desarrollo web con HTML, CSS y buenas prácticas de maquetado.
+# Laboratorios de Ingeniería de Software III
+
+Repositorio con las prácticas de laboratorio del curso **Ingeniería de Software III**, 
+del programa de Ingeniería de Sistemas de la **Universidad del Cauca**.
+
+Aquí se recopilan ejercicios prácticos sobre desarrollo web front-end, comenzando con 
+los fundamentos de HTML y avanzando progresivamente hacia CSS, diseño responsivo y 
+buenas prácticas de maquetado semántico.
+
+**Autor:** Santiago Felipe Gutiérrez Astaiza
