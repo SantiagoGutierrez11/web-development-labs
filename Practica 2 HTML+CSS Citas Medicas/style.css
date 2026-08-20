@@ -23,7 +23,7 @@
 #title{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 40px;
-    color: #4324f4;
+    color: hsl(249, 80%, 30%); 
     text-align: center;
 } 
 /**
@@ -39,12 +39,12 @@
 .grid-container-main{
     display: grid;
     grid-template-columns: 33% 33% 33%;
+    gap: 10px;
 }
 /**
 * Styles for the grid items
 **/
 .doctors{
-    margin: 3px;
     border-radius: 10px;
     padding: 10px;  
 }
@@ -92,7 +92,7 @@
 *
 **/
 .doctor-button button:hover {
-    background-color: #0a6d99;
+    background-color: rgba(10, 109, 153, 0.85);
     transform: scale(1.05);
 }
 /**
@@ -118,7 +118,7 @@
     margin-bottom: 0px;
 }
 footer{
-    background-color: #dc7a0a;
+    background-color: hsl(30, 88%, 47%); 
     border-radius: 10px;
     color: rgb(177, 20, 192);
     text-align: center;
@@ -129,7 +129,6 @@ footer{
 #title-footer-container{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
-    font-weight: bold;
     text-align: center;
 }
 #description-footer-container{
