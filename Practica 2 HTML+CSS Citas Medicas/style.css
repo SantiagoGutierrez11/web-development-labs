@@ -1,0 +1,138 @@
+/**
+ * CSS for the medical appointment scheduling page
+ */
+/**
+* Styles for the grid container in the header
+**/
+.grid-container-header{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+/**
+* Styles for the logo container
+**/
+#logo-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 20px;
+}
+ /**
+ * Styles for the main title
+ **/
+#title{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    color: #4324f4;
+    text-align: center;
+} 
+/**
+* Styles for the logo image
+**/
+#logo-clinica{
+    width: 100%;
+    height: auto;
+}
+/**
+* Styles for the grid container
+**/
+.grid-container-main{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+/**
+* Styles for the grid items
+**/
+.doctors{
+    margin: 3px;
+    border-radius: 10px;
+    padding: 10px;  
+}
+/**
+* Styles for text alignment classes
+**/
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+/**
+* Styles for the doctor images
+**/
+
+.doctor-image img{
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+/**
+* Styles for the "Agendar cita" button
+**/
+.doctor-button button{
+    display: block;
+    border: 2px solid #064b6d;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #064b6d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+/**
+*
+**/
+.doctor-button button:hover {
+    background-color: #0a6d99;
+    transform: scale(1.05);
+}
+/**
+* Styles for the doctor grid items
+**/
+.grid-doctor1, .grid-doctor6{
+    border: 4px solid #650909;
+    background-color: #801010;
+}
+.grid-doctor2, .grid-doctor5{
+    border: 4px solid #043904;
+    background-color: #36ac32;
+}
+.grid-doctor3, .grid-doctor4{
+    border: 4px solid #0b1385;
+    background-color: #567eec;
+}
+
+/**
+* Styles for the footer
+**/
+.grid-doctor4, .grid-doctor5, .grid-doctor6{
+    margin-bottom: 0px;
+}
+footer{
+    background-color: #dc7a0a;
+    border-radius: 10px;
+    color: rgb(177, 20, 192);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 0px;
+}
+
+#title-footer-container{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+#description-footer-container{
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
