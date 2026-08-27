@@ -3,9 +3,14 @@ class GestionarMedicos {
     this.medicoRepo = medicoRepo;
   }
 
-  registrarMedico(nombres, apellidos, edad, especialidad, horario, bibliografia, aniosExperiencia) {
+  registrarMedico(nombres, apellidos, edad, especialidad, horaInicioAtencion, horaFinAtencion, bibliografia, aniosExperiencia) {
     const id = this.medicoRepo.siguienteId();
-    const medico = new Medico(id, nombres, apellidos, edad, especialidad, horario, bibliografia, aniosExperiencia);
+    
+    if (horaInicioAtencion >= horaFinAtencion) {
+      throw new Error("La hora de inicio de atención debe ser menor que la hora de fin de atención");
+    }
+    
+    const medico = new Medico(id, nombres, apellidos, edad, especialidad, horaInicioAtencion, horaFinAtencion, bibliografia, aniosExperiencia);
     this.medicoRepo.agregar(medico);
     return medico;
   }

@@ -13,7 +13,9 @@ formMedico.addEventListener("submit", (e) => {
   const nombres = document.getElementById("nombres").value;
   const apellidos = document.getElementById("apellidos").value;
   const especialidad = document.getElementById("especialidad").value;
-  const horario = document.getElementById("horario").value;
+  const horaInicioAtencion = document.getElementById("horaInicioAtencion").value;
+  const horaFinAtencion = document.getElementById("horaFinAtencion").value;
+  const horario = `${horaInicioAtencion} - ${horaFinAtencion}`;
   const bibliografia = document.getElementById("bibliografia").value;
   const aniosExperiencia = parseInt(document.getElementById("aniosExperiencia").value);
 

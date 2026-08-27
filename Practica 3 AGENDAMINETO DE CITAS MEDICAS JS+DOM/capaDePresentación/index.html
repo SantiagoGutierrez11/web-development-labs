@@ -19,10 +19,22 @@
   <form id="formMedico">
     <input type="text" id="nombres" placeholder="Nombres" required>
     <input type="text" id="apellidos" placeholder="Apellidos" required>
-    <input type="text" id="especialidad" placeholder="Especialidad" required>
-    <input type="text" id="horario" placeholder="Horario" required>
+    <label for="especialidad">Especialidad</label>
+    <select id="especialidad" required>
+      <option value="" disabled selected>Seleccione una especialidad</option>
+      <option value="Medicina General">Medicina General</option>
+      <option value="Pediatria">Pediatría</option>
+      <option value="Cardiologia">Cardiología</option>
+      <option value="Dermatologia">Dermatología</option>
+      <option value="Ginecologia">Ginecología</option>
+      <option value="Ortopedia">Ortopedia</option>
+    </select>
+    <label for="horaInicioAtencion">Hora Inicio Atención</label>
+    <input type="time" id="horaInicioAtencion" required>
+    <label for="horaFinAtencion">Hora Fin Atención</label>
+    <input type="time" id="horaFinAtencion" required>
     <input type="text" id="bibliografia" placeholder="Bibliografia" required>
-    <input type="number" id="aniosExperiencia" placeholder="Años de Experiencia" required>
+    <input type="number" id="aniosExperiencia" placeholder="Años de Experiencia" min="0" required>
     <button type="submit" id="btnAgregarMedico" disabled>Agregar Médico</button>
   </form>
 
