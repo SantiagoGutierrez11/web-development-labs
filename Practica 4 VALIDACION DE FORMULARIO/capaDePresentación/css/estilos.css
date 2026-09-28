@@ -1,7 +1,13 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
     background-color: #f4f4f4;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
 }
 
 h2 {

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piedrazul | Centro médico</title>
+   <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <div id="notificaciones" class="notificaciones-contenedor"></div>
+
+  <header class="py-3">
+    <div class="container text-center">
+      <img src="img/logo.png" alt="Logo Piedrazul" class="rounded-circle img-fluid mb-2" width="120" height="120">
+      <h1>Piedrazul</h1>
+      <p class="lead mb-2">Centro médico: conoce a nuestros especialistas y agenda tu cita.</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/573001234567" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#seccion1">Promociones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#seccion2">Médicos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#seccion3">Registrar Paciente</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <div class="container-fluid mt-5" id="seccion1">
+      <h1 class="title">Promociones</h1>
+        <!-- Carrusel -->
+      <div class="contenedor-carrusel mb-4">
+        <div id="carouselPromociones" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/promo1.png" class="d-block w-100" alt="Promo 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/promo2.png" class="d-block w-100" alt="Promo 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/promo3.png" class="d-block w-100" alt="Promo 3">
+                </div>
+            </div>
+            <!-- Controles del carrusel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPromociones" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPromociones" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" id="seccion2">
+      <h1 class="title">Médicos</h1>
+      <div class="row">
+        <!-- Barra lateral (Especialidades) -->
+        <aside class="col-12 col-sm-2 col-md-4 mb-3">
+            <h2>Especialidades</h2>
+            <div class="list-group" role="tablist">
+                <a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#esp-terapia">Terapia Neural</a>
+                <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#esp-quiropraxia">Quiropraxia</a>
+                <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#esp-fisioterapia">Fisioterapia</a>
+                <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#esp-nutricion">Nutrición y Dietética Terapéutica</a>
+                <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#esp-general">Medicina General</a>
+                <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#esp-interna">Medicina Interna</a>
+            </div>
+        </aside>
+        <!-- Sección de médicos -->
+        <main class="col-12 col-sm-10 col-md-8">
+          <!-- Descripción de la especialidad seleccionada -->
+          <div class="tab-content mb-4">
+              <div class="tab-pane fade show active" id="esp-terapia">
+                  <h3>Terapia Neural</h3>
+                  <p>Tratamiento que aplica anestésicos locales en puntos específicos del cuerpo para regular el sistema nervioso y aliviar el dolor crónico.</p>
+              </div>
+              <div class="tab-pane fade" id="esp-quiropraxia">
+                  <h3>Quiropraxia</h3>
+                  <p>Diagnostica y trata problemas de la columna y las articulaciones mediante ajustes manuales, mejorando la postura y la movilidad.</p>
+              </div>
+              <div class="tab-pane fade" id="esp-fisioterapia">
+                  <h3>Fisioterapia</h3>
+                  <p>Rehabilitación por medio de ejercicio terapéutico y técnicas manuales para recuperar la función después de lesiones o cirugías.</p>
+              </div>
+              <div class="tab-pane fade" id="esp-nutricion">
+                  <h3>Nutrición y Dietética Terapéutica</h3>
+                  <p>Planes de alimentación personalizados para prevenir y tratar enfermedades como la diabetes, la hipertensión o el sobrepeso.</p>
+              </div>
+              <div class="tab-pane fade" id="esp-general">
+                  <h3>Medicina General</h3>
+                  <p>Atención integral de primer nivel: diagnóstico, tratamiento de enfermedades comunes y remisión a especialistas.</p>
+              </div>
+              <div class="tab-pane fade" id="esp-interna">
+                  <h3>Medicina Interna</h3>
+                  <p>Diagnóstico y manejo de enfermedades complejas de los órganos internos en adultos.</p>
+              </div>
+          </div>
+
+          <!-- Cartas de los médicos -->
+          <div class="row g-3">
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                  <div class="card h-100 border border-primary">
+                      <img src="./img/doctor1.jpg" class="card-img-top img-fluid" alt="Foto de Dr. Juan Perez">
+                      <div class="card-body d-flex flex-column">
+                          <h5 class="card-title">Dr. Juan Perez</h5>
+                          <p class="card-text"><strong>Terapia Neural:</strong> manejo del dolor crónico, migraña.</p>
+                          <p class="card-text fst-italic">"Tratar la causa, no solo el síntoma."</p>
+                          <a href="#seccion3" class="btn btn-primary mt-auto">Agendar cita</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                  <div class="card h-100 border border-primary">
+                      <img src="./img/doctor2.jpg" class="card-img-top img-fluid" alt="Foto de Dra. Maria Gomez">
+                      <div class="card-body d-flex flex-column">
+                          <h5 class="card-title">Dra. Maria Gomez</h5>
+                          <p class="card-text"><strong>Quiropraxia:</strong> columna vertebral, postura.</p>
+                          <p class="card-text fst-italic">"Una columna sana es una vida en movimiento."</p>
+                          <a href="#seccion3" class="btn btn-primary mt-auto">Agendar cita</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                  <div class="card h-100 border border-primary">
+                      <img src="./img/doctor3.jpg" class="card-img-top img-fluid" alt="Foto de Dr. Carlos Rodriguez">
+                      <div class="card-body d-flex flex-column">
+                          <h5 class="card-title">Dr. Carlos Rodriguez</h5>
+                          <p class="card-text"><strong>Fisioterapia:</strong> rehabilitación deportiva, lesiones de rodilla.</p>
+                          <p class="card-text fst-italic">"Cada paso de tu recuperación cuenta."</p>
+                          <a href="#seccion3" class="btn btn-primary mt-auto">Agendar cita</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                  <div class="card h-100 border border-primary">
+                      <img src="./img/doctor4.jpg" class="card-img-top img-fluid" alt="Foto de Dra. Laura Martinez">
+                      <div class="card-body d-flex flex-column">
+                          <h5 class="card-title">Dra. Laura Martinez</h5>
+                          <p class="card-text"><strong>Nutrición:</strong> nutrición clínica, control de peso.</p>
+                          <p class="card-text fst-italic">"Tu alimentación es tu primera medicina."</p>
+                          <a href="#seccion3" class="btn btn-primary mt-auto">Agendar cita</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                  <div class="card h-100 border border-primary">
+                      <img src="./img/doctor5.jpg" class="card-img-top img-fluid" alt="Foto de Dr. Andres Torres">
+                      <div class="card-body d-flex flex-column">
+                          <h5 class="card-title">Dr. Andres Torres</h5>
+                          <p class="card-text"><strong>Medicina General:</strong> medicina familiar, prevención.</p>
+                          <p class="card-text fst-italic">"Escucharte es el primer paso para cuidarte."</p>
+                          <a href="#seccion3" class="btn btn-primary mt-auto">Agendar cita</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                  <div class="card h-100 border border-primary">
+                      <img src="./img/doctor6.jpg" class="card-img-top img-fluid" alt="Foto de Dra. Sofia Ramirez">
+                      <div class="card-body d-flex flex-column">
+                          <h5 class="card-title">Dra. Sofia Ramirez</h5>
+                          <p class="card-text"><strong>Medicina Interna:</strong> diabetes, hipertensión.</p>
+                          <p class="card-text fst-italic">"Acompañarte en cada etapa de tu salud."</p>
+                          <a href="#seccion3" class="btn btn-primary mt-auto">Agendar cita</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </main>
+            
+      </div>
+    </div>
+
+    <div class="container mt-5" id="seccion3">
+      <h1 class="title text-center mb-4">Registrar Paciente</h1>
+      <p class="lead text-center mb-4">Regístrate para poder agendar citas con nuestros médicos.</p>
+
+      <form id="formPaciente" novalidate>
+
+        <div class="mb-3">
+          <label for="documentoPaciente" class="form-label">Número de documento</label>
+          <input type="text" id="documentoPaciente" class="form-control" placeholder="Número de documento">
+          <div class="text-danger" id="errorDocumentoPaciente"></div>
+        </div>
+
+        <div class="mb-3">
+          <label for="nombresPaciente" class="form-label">Nombres</label>
+          <input type="text" id="nombresPaciente" class="form-control" placeholder="Nombres">
+          <div class="text-danger" id="errorNombrePaciente"></div>
+        </div>
+
+        <div class="mb-3">
+          <label for="apellidosPaciente" class="form-label">Apellidos</label>
+          <input type="text" id="apellidosPaciente" class="form-control" placeholder="Apellidos">
+          <div class="text-danger" id="errorApellidosPaciente"></div>
+        </div>
+
+        <div class="mb-3">
+          <label for="telefonoPaciente" class="form-label">Teléfono</label>
+          <input type="text" id="telefonoPaciente" class="form-control" placeholder="Teléfono">
+          <div class="text-danger" id="errorTelefonoPaciente"></div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label d-block">Género</label>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="generoPaciente" id="generoMasculino" value="Masculino">
+            <label class="form-check-label" for="generoMasculino">Masculino</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="generoPaciente" id="generoFemenino" value="Femenino">
+            <label class="form-check-label" for="generoFemenino">Femenino</label>
+          </div>
+          <div class="text-danger" id="errorGeneroPaciente"></div>
+        </div>
+
+        <div class="mb-3">
+          <label for="contraseniaPaciente" class="form-label">Contraseña</label>
+          <input type="password" id="contraseniaPaciente" class="form-control" placeholder="Contraseña">
+          <div class="form-text">Mínimo 8 caracteres.</div>
+          <div class="text-danger" id="errorContraseniaPaciente"></div>
+        </div>
+
+        <div class="mb-3">
+          <label for="confirmarContraseniaPaciente" class="form-label">Confirmar contraseña</label>
+          <input type="password" id="confirmarContraseniaPaciente" class="form-control" placeholder="Repite la contraseña">
+          <div class="form-text">Escribe de nuevo la contraseña para confirmar tu registro.</div>
+          <div class="text-danger" id="errorConfirmarContraseniaPaciente"></div>
+        </div>
+
+        <div class="d-flex justify-content-start">
+          <button type="submit" id="btnAgregarPaciente" class="btn btn-primary">Registrar</button>
+        </div>
+      </form>
+    </div>
+
+
+  <footer class="py-4 mt-5">
+    <div class="container text-center">
+      <h5>Piedrazul</h5>
+      <p class="mb-1"><i class="fas fa-map-marker-alt"></i> Popayán, Cauca</p>
+      <p class="mb-3"><i class="fas fa-phone"></i> (602) 123 4567 &nbsp;|&nbsp; <i class="fas fa-envelope"></i> contacto@piedrazul.com</p>
+      <div class="social-icons mb-3">
+        <a href="https://www.facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/573001234567" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+      <p class="mb-0 small">&copy; 2026 Piedrazul. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Archivos JS -->
+    <!-- 1. Entidades -->
+    <script src="../capaDeAccesoADatos/entitys/Paciente.js"></script>
+
+    <!-- 2. Repositorios -->
+    <script src="../capaDeAccesoADatos/repositorios/PacienteRepository.js"></script>
+
+    <!-- 3. Fachadas -->
+    <script src="../fachadaServices/gestionarPacientesServices.js"></script>
+    <script src="../fachadaServices/validacionService.js"></script>
+
+    <!-- 4. Vista -->
+    <script src="notificaciones.js"></script>
+    <script src="logicaPaciente.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<div class="container-fluid mt-5" id="seccion1">
+    <h1 class="title">{{titulo}}</h1>
+    <div class="contenedor-carrusel mb-4">
+      <div id="carouselPromociones" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item" *ngFor="let promo of promociones; let i = index" [class.active]="i == 0">
+                  <img src="{{promo.imagen}}" class="d-block w-100" alt="{{promo.descripcion}}">
+              </div>
+          </div>
+          <!-- Controles del carrusel -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselPromociones" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselPromociones" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+          </button>
+      </div>
+    </div>
+</div>

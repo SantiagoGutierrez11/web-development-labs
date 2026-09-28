@@ -1,0 +1,27 @@
+body {
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.contenedor {
+    min-height: 50vh;
+    position: relative;
+}
+
+footer {
+    padding: 15px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #193cd9;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}

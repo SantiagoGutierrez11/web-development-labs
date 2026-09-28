@@ -1,5 +1,5 @@
 class Medico {
-  constructor(id, nombres, apellidos, especialidad, horaInicioAtencion, horaFinAtencion, bibliografia, aniosExperiencia) {
+  constructor(id, nombres, apellidos, especialidad, horaInicioAtencion, horaFinAtencion, bibliografia, aniosExperiencia, genero) {
     this.id = id;
     this.nombres = nombres;
     this.apellidos = apellidos;
@@ -8,6 +8,7 @@ class Medico {
     this.horaFinAtencion = horaFinAtencion;
     this.bibliografia = bibliografia;
     this.aniosExperiencia = aniosExperiencia;
+    this.genero = genero;
   }
 }
 

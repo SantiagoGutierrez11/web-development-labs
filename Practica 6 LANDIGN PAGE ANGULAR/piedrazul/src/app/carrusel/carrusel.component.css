@@ -1,0 +1,21 @@
+/* Div padre del carrusel: define el tamaño */
+.contenedor-carrusel {
+    max-width: 1100px;
+    margin: 0 auto;
+    aspect-ratio: 12 / 5; /* misma proporción que las imágenes */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* El carrusel y cada slide ocupan todo el alto del div padre */
+.contenedor-carrusel .carousel,
+.contenedor-carrusel .carousel-inner,
+.contenedor-carrusel .carousel-item {
+    height: 100%;
+}
+
+/* La imagen se adapta al div padre sin deformarse */
+.contenedor-carrusel img {
+    height: 100%;
+    object-fit: cover;
+}

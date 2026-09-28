@@ -1,0 +1,29 @@
+/* Barra lateral (aside) de especialidades:
+   evita que palabras largas se desborden encima de las
+   tarjetas de médicos cuando la columna es angosta (col-sm-2). */
+aside {
+    min-width: 0;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+/* Solo entre 576px y 767px, cuando la barra ocupa 2 de 12 columnas */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    aside h2 {
+        font-size: 0.95rem;
+    }
+    aside .list-group-item {
+        font-size: 0.75rem;
+        padding: 0.5rem 0.4rem;
+    }
+}
+
+h5 {
+    margin-bottom: 0.5rem;
+}
+
+/* Foto del médico: mismo alto en todas las cartas */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}

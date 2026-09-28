@@ -9,6 +9,9 @@ formPaciente.addEventListener("input", () => {
 
 formPaciente.addEventListener("submit", (e) => {
   e.preventDefault();
+  if(!validarFormularioPaciente()) {
+    return;
+  }
   const nombres = document.getElementById("nombresPaciente").value; 
   const apellidos = document.getElementById("apellidosPaciente").value;
 
